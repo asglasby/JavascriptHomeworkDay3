@@ -24,4 +24,7 @@ var divWriter = function (myStringParameter) {
     document.getElementById("divWriterResults").innerHTML = myStringParameter;
 }
 
-myAjaxGetToFirebase(divWriter);
+myAjaxGetToFirebase((function(myParameter){
+    myAlert();
+    divWriter(myParameter);
+}))
