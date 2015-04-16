@@ -20,4 +20,8 @@ var myAlert = function () {
     console.log("I think my callback worked?");
 }
 
-myAjaxGetToFirebase(myAlert);
+var divWriter = function (myStringParameter) {
+    document.getElementById("divWriterResults").innerHTML = myStringParameter;
+}
+
+myAjaxGetToFirebase(divWriter);
